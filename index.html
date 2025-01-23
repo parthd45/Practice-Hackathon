@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Homepage - JK Innovative College</title>
+        
+    </head>
+    <body style="
+                font-family: Arial, sans-serif;
+                background-color: whitesmoke;
+                margin: 0;
+                padding: 0;
+            ">
+        <header style="
+                background-color: whitesmoke;
+                padding: 15px 20px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            ">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><h3 style="padding-left: 600px"><a href="Homepage.jsp" style="color: black;">HOME</a></h3></td>
+                        <td><h3 style="padding-left: 20px"><a href="about.jsp" style="color: black">ABOUT US</a></h3></td>
+                        <td><h3 style="padding-left: 20px"><a href="Contactus.jsp" style="color: black">CONTACT US</a></h3></td>
+                        <td><h3 style="padding-left: 20px"><a href="Homepage.jsp" style="color: black">ADD COMMENT</a></h3></td>
+                        <td><h3 style="padding-left: 20px"><a href="Login.jsp" style="color: black">LOGIN</a></h3></td>
+                    </tr>
+                </tbody>
+            </table>
+        </header>
+        <center>
+            <section class="home">
+                <table style="padding-right: 282px; padding-left: 182px; background-color: lightgray;">
+                    <tbody>
+                        <tr>
+                            <td><img src="download.png" alt="jk logo" style="position: relative; max-width: 250px; background: transparent;"></td>
+                            <td><h1 style="font-size: 60px;">JK Innovative College</h1></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </center>
+        <center id="add-comment">
+            <section style="margin-top: 50px; background-color: lightgray; padding: 20px; width: 50%; border-radius: 10px;">
+                <h2>Add Comment</h2>
+                <form action="AddServlet" method="POST">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <label for="name" style="font-size: 18px; width: 100px;">Name:</label>
+                        <input type="text" id="name" name="name" required style="flex: 1; padding: 10px;">
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <label for="email" style="font-size: 18px; width: 100px;">Email:</label>
+                        <input type="email" id="email" name="email" required style="flex: 1; padding: 10px;">
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <label for="comment" style="font-size: 18px; width: 100px;">Comment:</label>
+                        <textarea id="comment" name="comment" rows="4" required style="flex: 1; padding: 10px;"></textarea>
+                    </div>
+                    <button type="submit" style="padding: 10px 20px; background-color: black; color: white; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
+                </form>
+            </section>
+        </center>
+        <footer style="padding-top: 150px;">
+            <table style="background-color: black; color: white;">
+                <tbody>
+                    <tr>
+                        <td><p style="padding-left: 80px;">Author: Pallavi Kabra<br> 
+                            <a href="mailto:jkinnovative03@gmail.com">info@jkinnovativecollege.edu</a></p></td>
+                        <td><p style="padding-left: 300px;">Contact No:<br>
+                            <u style="color: blue;">+91-721-2573788</u><br> 
+                            <u style="color: blue;">+91-721-2565770</u></p></td>
+                        <td><p style="padding-left: 400px; padding-right: 105px;">Design by:<br>
+                            <u style="color: blue;">Arpit Bavankule</u></p></td>
+                    </tr>
+                </tbody>
+            </table>
+        </footer>
+    </body>
+</html>
+
+
